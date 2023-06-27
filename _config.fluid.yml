@@ -26,7 +26,7 @@ apple_touch_icon: /img/fluid.png
 
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 # Title separator in browser tab, eg: article - site
-tab_title_separator: " | "
+tab_title_separator: " - "
 
 # 强制所有链接升级为 HTTPS（适用于图片等资源出现 HTTP 混入报错）
 # Force all links to be HTTPS (applicable to HTTP mixed error)
@@ -91,7 +91,7 @@ fun_features:
 
     # 游标字符
     # Cursor character
-    cursorChar: "_"
+    cursorChar: "|"
 
     # 是否循环播放效果
     # If true, loop animation
@@ -460,12 +460,12 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: /img/cover8.jpg
+  banner_img: /img/cover9.jpg
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
   # Available: 0 - 100
-  banner_img_height: 60
+  banner_img_height: 70
 
   # 头图黑色蒙版的不透明度，available: 0 - 1.0， 1 是完全不透明
   # Opacity of the banner mask, 1.0 is completely opaque
@@ -532,7 +532,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/cover8.jpg
+  banner_img: /img/cover9.jpg
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -927,7 +927,7 @@ category:
 tag:
   enable: true
   banner_img: /img/cover8.jpg
-  banner_img_height: 80
+  banner_img_height: 70
   banner_mask_alpha: 0.3
   tagcloud:
     min_font: 15
