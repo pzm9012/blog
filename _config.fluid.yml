@@ -1015,6 +1015,12 @@ links:
       link: "https://blog.shenmo.tech/",
       avatar: "/img/favicon.png"
     }
+    - {
+      title: "hanzn-zzx的小站",
+      intro: "博客",
+      link: "https://hanzn-zzx.gitlab.io/",
+      avatar: "/img/favicon.png"
+    }
 
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
