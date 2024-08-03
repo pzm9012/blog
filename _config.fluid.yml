@@ -1023,6 +1023,12 @@ links:
       link: "https://blog.fqilin.top/",
       avatar: "https://blog.fqilin.top/img/avatar.jpg"
     }
+    - {
+      title: "云锦书笺",
+      intro: "博客",
+      link: "https://sothx.com",
+      avatar: "https://sothx.com/images/themes/Avatar.jpg"
+    }
 
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
