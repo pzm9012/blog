@@ -14,7 +14,9 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://pzm9012.github.io
-permalink: post/:title/
+# permalink: post/:title/
+permalink: posts/:abbrlink/ #文章结尾不带 .html
+# permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -105,8 +107,37 @@ deploy:
   type: git
   repo: git@github.com:pzm9012/pzm9012.github.io.git
   branch: main
+  
 # hexo-generator-searchdb
 search:
   path: search.xml
   field: post
   format: html
+  
+# abbrlink config
+abbrlink:
+  alg: crc32      #support crc16(default) and crc32 进制
+  rep: hex        #support dec(default) and hex  算法
+  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
+  ## Generate categories from directory-tree
+  ## depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+     enable: true  #true(default)
+     depth:        #3(default)
+     over_write: false 
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
+  
+ # RSS
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: false
+  
+ # hexo-excerpt
+excerpt:
+  depth: 10
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true    
